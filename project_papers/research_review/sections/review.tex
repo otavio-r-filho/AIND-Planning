@@ -1,0 +1,17 @@
+\section*{AI Key Developmts}\label{sec:ai_key_dev}
+
+The three advances that will be pointed are the STRIPS planning system, the PDDL syntax and the \textsc{Graphplan} algorithm.
+
+\subsection*{STRIPS}\label{subsec:strips}
+
+The acronym STRIPS stands for Standford Research Institute Problem Solver and it is described in \cite{strips1} and reviewed in \cite{strips2}. The STRIPS system was introduced in 1971 and its first versions were implemented in LISP. This was the first major planning system developed in conjunction with robotics research, and its primary objective was to solve problems in the class of rearranging objects and navigation.
+
+The system solves problems searching through a space of world models, each one of which represented by a set of well formed formulas of the first-order predicate calculus. Because STRIPS separates the processes of theorem proving and searching through a space of world models, it is possible for it to tackle theses phases with appropriate set of tactics. 
+
+\subsection*{PDDL}
+
+The PDDL, Planning Domain Definition Language, is described in \cite{pddl} and also well studied in \cite{aima}. It was introduced in 1998 by a team of 6 researchers at the AIPS-98 Planning Competition Committee. PDDL is a syntax standard based on 2 other syntaxes, takes the expressiveness of ADL for propositions and UMCP for actions. The PDDL language express the domain through predicates, having a set of initial conditions, possible actions and goal.
+
+\subsection*{Graphplan}
+
+The \textsc{Graphplan} algorithm was presented in 1997 by Avrim L. Blum and Merrick L. Furst, it's described in \cite{praphplan} and presented by \cite{aima}. This algorithm returns a partial-order plan, and as the article shows, it's much faster than some total-order planners like UCPOP. \textsc{Graphplan} uses a paradigm called Planning Graph Analysis, and while extremely fast for some objects, for many object tends to not have a good performance, because the action list grows very quickly, making search through the planning graph harder.
